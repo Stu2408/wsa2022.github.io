@@ -1,0 +1,26 @@
+<!--include:404-section:start-->
+<div class="col_half nobottommargin">
+	<div class="error404 center">404</div>
+</div>
+<div class="col_half nobottommargin col_last">
+	<div class="heading-block nobottomborder">
+		<h4>Ooops.! The Page you were looking for, couldn't be found.</h4>
+		<span>Try searching for the best match or browse the links above:</span>
+	</div>
+	<form action="/search.html" method="get" role="form" class="nobottommargin">
+		<div class="input-group input-group-lg">
+			<input name="q" type="text" class="form-control" placeholder="Search for Pages...">
+			<span class="input-group-btn">
+				<button class="btn btn-danger" type="button">Search</button>
+			</span>
+		</div>
+	</form>
+	<div class="col_two_third widget_links topmargin nobottommargin">
+		<ul>
+			{% for navigation in site.data.navigation %}
+				<li><a href="{{ navigation.href }}">{{ navigation.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+<!--include:404-section:end-->

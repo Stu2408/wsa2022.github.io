@@ -1,0 +1,25 @@
+<!--include:testimonial:start-->
+<div class="section footer-stick">
+    <h4 class="uppercase center">What <span>Clients</span> Say?</h4>
+    <div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+        <div class="flexslider">
+            <div class="slider-wrap">
+                {% for testimonial in site.data.testimonial %}
+                <div class="slide">
+                    <div class="testi-image">
+                        <a href="{{ testimonial.href }}"><img src="{{ testimonial.image }}" alt="{{ testimonial.alt }}"></a>
+                    </div>
+                    <div class="testi-content">
+                        <p>{{ testimonial.quote }}</p>
+                        <div class="testi-meta">
+                            {{ testimonial.from }}
+                            <span>{{ testimonial.of }}</span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<!--include:testimonial:end-->

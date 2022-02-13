@@ -1,0 +1,20 @@
+<!--include:three-column-section:start-->
+<div class="container clearfix">
+    {% for mission in site.data.mission %} 
+    {% if forloop.last %}
+    <div class="col_one_third col_last">
+        <div class="heading-block fancy-title nobottomborder title-bottom-border">
+            <h4>{{ mission.heading }}</h4>
+        </div>
+        <p>{{ mission.description}}</p>
+    </div>
+    {% else %}
+    <div class="col_one_third">
+        <div class="heading-block fancy-title nobottomborder title-bottom-border">
+            <h4>{{ mission.heading }}</h4>
+        </div>
+        <p>{{ mission.description}}</p>
+    </div>
+    {% endif %} {% endfor %}
+</div>
+<!--include:three-column-section:end-->

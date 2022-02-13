@@ -1,0 +1,24 @@
+<!--include:footer-2:start-->
+<footer id="footer" class="dark">
+<div id="copyrights">
+<div class="container clearfix">
+	<div class="col_half">
+		{{ site.copyrights-copyright-message }}<br>
+	</div>
+	<div class="col_half col_last tright copyright-links">
+		<i class="icon-envelope2"></i><a style1="color: yellow;" href="mailto:{{site.company-email-address}}?Subject=Enquiry" target="_top">{{site.company-email-address}}</a>
+		<span class="middot">&middot; </span> <i class="icon-phone"></i>{{ site.company-mobile-number }}
+		<div class="clear"></div>
+		<div class="fright clearfix">
+			{% for social in site.data.social %}
+				<a href="{{ social.href }}" class="social-icon si-small si-borderless si-{{ social.type }}">
+					<i class="icon-{{ social.type }}"></i>
+					<i class="icon-{{ social.type }}"></i>
+				</a>
+  			{% endfor %}
+		</div>
+	</div>
+</div>
+</div>
+</footer>
+<!--include:footer-2:end-->

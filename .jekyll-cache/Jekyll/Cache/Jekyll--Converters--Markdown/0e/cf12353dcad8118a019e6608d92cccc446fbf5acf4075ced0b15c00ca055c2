@@ -1,0 +1,100 @@
+I"<!--include:single-portfolio:start-->
+<div class="container clearfix">
+	
+	<div class="col_two_third portfolio-single-image nobottommargin">
+		<a href="#"><img src="/assets/images/portfolio/single/2000x1333-base-hikvision-cameras-2.png" alt="Wireless Security Alarms | Glasgow | IP Camera and CCTV Systems" /></a>
+	</div>
+
+	<div class="col_one_third portfolio-single-content col_last nobottommargin">
+		<div class="fancy-title title-bottom-border">
+			<h2>System Info:</h2>
+		</div>
+		<p>We can supply and install CCTV systems for your home or business.<br /><br /> We supply only HIK Vision IP CCTV systems, these allow you to view live pictures from your home or business premises via the HIK Connect free App which is available for Android and IOS devices.
+</p>
+		<div class="line"></div>
+		<!--include:social-share:start-->
+<div class="si-share clearfix">
+    <span>Share:</span>
+    <div>
+        
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://wirelesssecurityalarms.co.uk/systems/ip-camera-and-cctv-systems.html" class="social-icon si-borderless si-facebook">
+            <i class="icon-facebook"></i>
+            <i class="icon-facebook"></i>
+        </a>
+        
+        <a href="https://twitter.com/home?status=http://wirelesssecurityalarms.co.uk/systems/ip-camera-and-cctv-systems.html" class="social-icon si-borderless si-twitter">
+            <i class="icon-twitter"></i>
+            <i class="icon-twitter"></i>
+        </a>
+        
+        <a href="https://plus.google.com/share?url=http://wirelesssecurityalarms.co.uk/systems/ip-camera-and-cctv-systems.html" class="social-icon si-borderless si-gplus">
+            <i class="icon-gplus"></i>
+            <i class="icon-gplus"></i>
+        </a>
+        
+        <a href="https://pinterest.com/pin/create/button/?url=&amp;media=http://wirelesssecurityalarms.co.uk/systems/ip-camera-and-cctv-systems.html" class="social-icon si-borderless si-pinterest">
+            <i class="icon-pinterest"></i>
+            <i class="icon-pinterest"></i>
+        </a>
+        
+        <a href="mailto:?subject=Wireless Alarm Systems Limited&amp;body=http://wirelesssecurityalarms.co.uk/systems/ip-camera-and-cctv-systems.html" class="social-icon si-borderless si-email3">
+            <i class="icon-email3"></i>
+            <i class="icon-email3"></i>
+        </a>
+        
+    </div>
+</div>
+<!--include:social-share.html:end-->
+
+	</div>
+</div>
+<!--include:detail-tab:start-->
+<!-- <div class="postcontent nobottommargin clearfix">
+ -->
+<div class="container clearfix">
+ 	<!-- <div class="clear"></div>	 -->
+	<div class="line"></div>
+ 	<h4>System Details</h4>
+	<div class="tabs side-tabs tabs-bordered clearfix" id="tab-1">
+		<ul class="tab-nav clearfix">
+			
+				<li><a href="#tabs-1">Operation</a></li>
+			
+			
+				<li><a href="#tabs-2">Warranty &amp; Maintenance</a></li>
+			
+			
+				<li><a href="#tabs-3">Other CCTV Options</a></li>
+			
+			
+			
+			
+		</ul>
+		<div class="tab-container">
+			
+				<div class="tab-content clearfix" id="tabs-1">
+					All Systems will provide 24/7 recording and can be viewed via Hik Connect on a mobile device from anywhere in the world.<br /><br />
+
+				</div>
+			
+			
+				<div class="tab-content clearfix" id="tabs-2">
+					This is a quality product and should not be confused with some of the DIY options available. WE are confident in the quality of PYRONIX Cameras and offer a full replacement parts and labour warranty of 12 months for these products.<br /><br /> Maintenance is not required for these products however we offer extended full parts and labour for these cameras the prices for which can be supplied on request.
+
+				</div>
+			
+			
+				<div class="tab-content clearfix" id="tabs-3">
+					If you think you may require a more comprehensive CCTV solution then please contact us and we will be happy to carry out a survey and advise you on available options. External cameras require a site survey to provide an accurate cost due to installation work which may be required.
+
+				</div>
+			
+			
+			
+			
+		</div>
+	</div>
+</div>
+<!--include:detail-tab:end-->
+<!--include:single-portfolio:start-->
+:ET

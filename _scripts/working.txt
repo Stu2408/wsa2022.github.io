@@ -1,0 +1,181 @@
+# Working
+
+1 . This
+util.js:231 Google Maps JavaScript API warning: NoApiKeys https://developers.google.com/maps/documentation/javascript/error-messages#no-api-keys
+wx.m @ util.js:231
+util.js:231 Google Maps JavaScript API warning: SensorNotRequired https://developers.google.com/maps/documentation/javascript/error-messages#sensor-not-required
+wx.m @ util.js:231
+
+
+## Home Page
+{% include slider.html %}
+{% include light-promo.html %}
+
+Pyronix Enforcer System
+http://www.pyronix.co.uk/products-and-solutions/enforcer-32-we
+http://www.pyronix.co.uk/products-and-solutions/enforcer-homecontrol-app-kit-1
+http://www.pyronix.co.uk/products-and-solutions/enforcer-pstn-kit-1
+
+http://www.pyronix.co.uk/_assets/media/product/440_8_header.jpg
+http://www.pyronix.co.uk/_assets/media/product/428_8_header.jpg
+http://www.pyronix.co.uk/_assets/media/product/419_8_header.jpg
+
+Background Colour: #F1F1F1
+
+Enforcer GSM Kit 1
+Product Features
+	Starter kit with GSM modem
+	Award winning Enforcer two-way wireless technology
+	Base and cover sold separately
+	Panel Type: Domestic
+
+Enforcer HomeControl+ App Kit 1
+Product Features
+	Ideal wireless starter kit, with the new HomeControl+ Panel
+	Control your home from the palm of your hand
+	Base and cover sold separately
+	Panel Type: Domestic
+
+Enforcer PSTN Kit 1
+Product Features
+	Starter kit with PSTN modem
+	Award winning Enforcer technology
+	Base and cover sold separately
+	Panel Type: Domestic
+
+
+Visonic Powermax System
+
+Full Compliance With Most International Standards & Regulations.
+Control Panel, 2 x Pet Toterant PIRs, 1 x Door Contact, 1 x External Siren, 2 x Remote Fobs
+Built In Proximity Reader
+Built-In PSTN Communicator
+Voice Functionality Option.
+Expander Module
+Two-way RF System With Diversity Antenna
+Easy-view LCD display
+Back-up battery
+GSM/GPRS/IP modules.
+
+XCAM/S External IP Video Camera
+Product Features
+Bringing home external monitoring to the palm of your hand
+Real-time streaming
+Compatible exclusively with the HomeControl+ App and System
+15m night vision range keeps you assured at any time
+720p HD quality video
+
+ICAM/PT Internal Video Camera
+Product Features
+Bringing home monitoring to the palm of your hand
+Real time streaming
+Compatible with the HomeControl+ App and System
+Change the camera angle with the built in pan and tilt
+720p HD quality video
+You can even view at night with the night vision mode
+Panel Type: Domestic & Commercial
+
+
+http://localhost:8888/canvas/portfolio-1-alt.html
+http://localhost:8888/canvas/portfolio-single-gallery.html
+
+# About Us
+## Did Have 
+{% include heading-section.html %}
+{% include three-column-section.html %}
+{% include testimonial.html %}
+
+
+{% if page.system-details-tab-tab1-text %}
+		<div class="tab-content clearfix" id="tabs-1">
+		{{ page.system-details-tab-tab1-text }}
+	</div>
+{% else % }
+	<div class="tab-content clearfix" id="tabs-1">
+		No detail in page front-matter.
+	</div>
+{% endif %}
+
+{% include heading-section.html %}
+
+{% for navigation in site.data.navigation %}
+	{% if navigation.title == "Home" %}
+		<li><a href="{{ navigation.href }}">{{ navigation.title }}</a></li>
+	{% elsif navigation.title == page.title %}	
+		<li class="active">{{ navigation.title }}</li>
+	{% endif %}	
+{% endfor %}
+
+/assets/include/quickcontact.php
+/assets/include/sendemail.php
+
+<?php phpinfo(); ?>
+
+<?php
+require_once('/assets/include/phpmailer/class.phpmailer.php');
+echo "Start."			
+$mail             = new PHPMailer();
+$body             = "BODY TEXT";
+$mail->IsSMTP(); 
+$mail->Host       = "localhost"; 
+$mail->SMTPDebug  = 2; 
+$mail->SMTPAuth   = true; 
+$mail->Port       = 26;    
+$mail->Username   = "wsa2016"; 
+$mail->Password   = "Geranium035";       
+$mail->SetFrom('test@kjm.com', 'Kieran Murphy');
+$mail->AddReplyTo("test@kjm.com","Kieran Murphy");
+$mail->Subject    = "PHPMailer Test Subject via smtp, basic with authentication";
+$mail->AltBody    = "To view the message, please use an HTML compatible email viewer!";
+$mail->MsgHTML($body);
+$address = "sales@wirelesssecurityalarms.co.uk";
+$mail->AddAddress($address, "WSA Sales");
+if(!$mail->Send()) {
+echo "Mailer Error: " . $mail->ErrorInfo;
+} else {
+echo "Message sent!";
+}
+echo "End."
+?>
+
+$subject = 'New Message From Wireless Security Alarms Limited - Quick Contact Form';
+
+$toemail = 'sales@wirelesssecurityalarms.co.uk'; // Your Email Address
+//$toemail = 'kieranjmurphy@gmail.com'; // Your Email Address
+$toname = 'Wireless Security Alarms Limited Sales'; // Your Name
+
+$mail->Host       = "localhost"; 
+$mail->SMTPDebug  = 2; 
+$mail->SMTPAuth   = true; 
+$mail->Port       = 26;    
+$mail->Username   = "wsa2016"; 
+$mail->Password   = "Geranium035"; 
+
+<script>
+  (function() {
+    var cx = '015818059723840865412:hs3xw7igzdk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchresults-only></gcse:searchresults-only>
+
+<pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
+
+AG : 015818059723840865412:vw8ipuqvjkm
+WSA: 015818059723840865412:hs3xw7igzdk
+
+James McEnaney <jimmcenaney@hotmail.com>
+
+Change for test.
+
+
+	
+
+
+

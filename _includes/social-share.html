@@ -1,0 +1,13 @@
+<!--include:social-share:start-->
+<div class="si-share clearfix">
+    <span>Share:</span>
+    <div>
+        {% for share in site.data.share %}
+        <a href="{{ share.href }}{{ site.production-domain }}{{ page.url }}" class="social-icon si-borderless {{ share.si-class }}">
+            <i class="{{ share.icon-class }}"></i>
+            <i class="{{ share.icon-class }}"></i>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+<!--include:social-share.html:end-->

@@ -1,0 +1,18 @@
+<!--include:single-portfolio:start-->
+<div class="container clearfix">
+	
+	<div class="col_two_third portfolio-single-image nobottommargin">
+		<a href="#"><img src="{{ page.system-image }}" alt="{{ page.title }}"></a>
+	</div>
+
+	<div class="col_one_third portfolio-single-content col_last nobottommargin">
+		<div class="fancy-title title-bottom-border">
+			<h2>{{ page.system-info-title }}</h2>
+		</div>
+		<p>{{ page.system-info-description }}</p>
+		<div class="line"></div>
+		{% include social-share.html %}
+	</div>
+</div>
+{% include detail-tab.html %}
+<!--include:single-portfolio:start-->

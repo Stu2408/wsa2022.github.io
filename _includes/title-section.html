@@ -1,0 +1,26 @@
+<!--include:title-section:start-->
+<section id="page-title" class="page-title-mini-disabled">
+	<div class="container clearfix">
+		<h1>{% if page.display-title %}{{ page.display-title }}{% else %}{{ site.title }}{% endif %}</h1>
+		{% if page.description  %}
+			<span>{{ page.description }}</span>
+		{% endif %}
+		<ol class="breadcrumb">
+			{% for navigation in site.data.navigation %}
+				{% if navigation.title == "Home" %}
+					<li><a href="{{ navigation.href }}">{{ navigation.title }}</a></li>
+				{% elsif navigation.title == page.display-title %}	
+					<li class="active">{{ navigation.title }}</li>
+				{% elsif navigation.subcategories != null %}
+					{% for subcategory in navigation.subcategories %}
+						{% if subcategory.subtitle == page.display-title %}
+							<li><a href="{{ navigation.href }}">{{ navigation.title }}</a></li>
+							<li class="active">{{ subcategory.subtitle }}</li>
+						{% endif %}	
+					{% endfor %}
+				{% endif %}	
+			{% endfor %}
+		</ol>
+	</div>
+</section>
+<!--include:title-section:end-->

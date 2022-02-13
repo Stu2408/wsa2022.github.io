@@ -1,0 +1,142 @@
+<!--include:footer-1:start-->
+<footer id="footer" class="dark">
+	<div class="container">
+		<!-- Footer Widgets -->
+		<div class="footer-widgets-wrap clearfix">
+			<div class="col_two_third">
+				<div class="col_one_third">
+					<div class="widget clearfix">
+						<img src="{{site.footer-widget-logo}}" alt="" class="footer-logo">
+						<p>{{ site.footer-company-tagline-1 }}</p>
+						<div style="background: url('assets/images/world-map.png') no-repeat center center; background-size: 100%;">
+							<address>
+								<strong>Headquarters:</strong><br>
+								{% if site.company-postal-address-1 %}
+									{{site.company-postal-address-1}}<br>
+								{% endif %}
+								{% if site.company-postal-address-2 %}
+									{{site.company-postal-address-2}}<br>
+								{% endif %}
+								{% if site.company-postal-address-3 %}
+									{{site.company-postal-address-3}}<br>
+								{% endif %}
+								{% if site.company-postal-address-4 %}
+									{{site.company-postal-address-4}}<br>
+								{% endif %}
+								{% if site.company-postal-address-5 %}
+									{{site.company-postal-address-5}}<br>
+								{% endif %}
+							</address>
+						<abbr title="Phone Number"><strong>Phone:</strong></abbr> {{site.company-telephone-number}}<br>
+					<abbr title="Fax"><strong>Fax:</strong></abbr> {{site.company-fax-number}}<br>
+				<abbr title="Email Address"><strong>Email:</strong></abbr> {{site.company-email-address}}
+			</div>
+		</div>
+	</div>
+	<div class="col_one_third">
+		<div class="widget widget_links clearfix">
+			<h4>{{site.blogroll-title}}</h4>
+			<ul>
+				{% for blogroll in site.data.blogroll %}
+					<li><a href="{{ blogroll.href }}">{{ blogroll.title }}</a></li>
+  				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	<div class="col_one_third col_last">
+		<div class="widget clearfix">
+			<h4>{{site.recent-posts-title}}</h4>
+			<div id="post-list-footer">
+				{% for post in site.posts limit:3 %}
+				    <div class="spost clearfix">
+						<div class="entry-c">
+							<div class="entry-title">
+								<h4><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title | xml_escape }}</a></h4>
+							</div>
+							<ul class="entry-meta">
+								<li>{{ post.date | date_to_rfc822 }}</li>
+							</ul>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col_one_third col_last">
+	<div class="widget subscribe-widget clearfix">
+		<h5>{{ site.footer-subscribe-tagline-1 }}</h5>
+		<div id="widget-subscribe-form-result" data-notify-type="success" data-notify-msg="Message"></div>
+		<form id="widget-subscribe-form" action="//formspree.io/kieranjmurphy@gmail.com" role="form" method="post" class="nobottommargin">
+			<div class="input-group divcenter">
+				<span class="input-group-addon"><i class="icon-email2"></i></span>
+				<input type="hidden" name="_subject" value="New Subscription from" />
+				<input type="email" id="widget-subscribe-form-email" name="_replyto" class="form-control required email" placeholder="Enter your Email">
+				<span class="input-group-btn">
+					<button class="btn btn-success" type="submit">Subscribe</button>
+				</span>
+			</div>
+		</form>
+		<script type="text/javascript">
+			$("#widget-subscribe-form").validate({
+				submitHandler: function(form) {
+					$(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+					$(form).ajaxSubmit({
+						method: "POST",
+						dataType: "json",
+						target: '#widget-subscribe-form-result',
+						success: function() {
+							$(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+							$('#widget-subscribe-form').find('.form-control').val('');
+							$('#widget-subscribe-form-result').attr('data-notify-msg', $('#widget-subscribe-form-result').html()).html('');
+							SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
+						}
+					});
+				}
+			});
+		</script>
+	</div>
+	<div class="widget clearfix" style="margin-bottom: -20px;">
+		<div class="row">
+			<div class="col-md-6 clearfix bottommargin-sm">
+				<a href="#" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">
+					<i class="icon-facebook"></i>
+					<i class="icon-facebook"></i>
+				</a>
+				<a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
+			</div>
+			<div class="col-md-6 clearfix">
+				<a href="#" class="social-icon si-dark si-colored si-rss nobottommargin" style="margin-right: 10px;">
+					<i class="icon-rss"></i>
+					<i class="icon-rss"></i>
+				</a>
+				<a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
+			</div>
+		</div>
+	</div>
+</div>
+</div><!-- .footer-widgets-wrap end -->
+</div>
+<!-- Copyrights -->
+<div id="copyrights">
+<div class="container clearfix">
+	<div class="col_half">
+		{{ site.copyrights-copyright-message }}<br>
+		<div class="copyright-links"><a href="{{ site.copyrights-copyright-terms-href }}">{{ site.copyrights-copyright-terms-title }}</a> / <a href="{{ site.copyrights-copyright-privacy-href }}">{{ site.copyrights-copyright-privacy-title }}</a></div>
+	</div>
+	<div class="col_half col_last tright">
+		<div class="fright clearfix">
+			{% for social in site.data.social %}
+				<a href="{{ social.href }}" class="social-icon si-small si-borderless si-{{ social.type }}">
+					<i class="icon-{{ social.type }}"></i>
+					<i class="icon-{{ social.type }}"></i>
+				</a>
+  			{% endfor %}
+		</div>
+		<div class="clear"></div>
+		<i class="icon-envelope2"></i> {{ site.company-email-address }} <span class="middot">&middot;</span> <i class="icon-headphones"></i> {{ site.company-telephone-number }} <span class="middot">&middot;</span> <i class="icon-skype2"></i> {{ site.company-skype-text }}
+	</div>
+</div>
+</div>
+</footer>
+<!--include:footer-1:end-->

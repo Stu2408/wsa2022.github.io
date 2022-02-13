@@ -1,0 +1,84 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+#
+# This application uses Canvas 3.1
+#
+
+# Site settings
+title: "Wireless Security Alarms Limited"
+email: enquiries@wirelesssecurityalarms.co.uk
+description: "The home security experts"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://wirelesssecurityalarms.co.uk" # the base hostname & protocol for your site
+twitter_username: wsa
+github_username:  wsa
+
+# Build settings
+markdown: kramdown
+
+# Run settings
+port: 4000
+host: 127.0.0.1
+exclude: ['vendor','*.txt', 'config.codekit','Gemfile','Gemfile.lock','README.md','.gitlab-ci.yml']
+include: ['.htaccess']
+
+# Domain Settings.
+production-domain: "http://wirelesssecurityalarms.co.uk"
+development-domain: "http://localhost:5757"
+
+# Design Settings
+# Font will need changed in 'styles.css'
+google-font-href: "http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
+google-font-href1: "https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic|Oswald|Roboto+Slab:400,700"
+assets-base: "/assets"
+assets-base-css: "/assets/css"
+assets-base-js: "/assets/js"
+
+# Company Settings
+company-name-title-case: "Wireless Security Alarms Limited"
+#company-telephone-number: 0141-500-6000
+company-mobile-number: 07724-181233
+company-email-address: sales@wirelesssecurityalarms.co.uk
+#company-postal-address-1: 63 Acacia Avenue
+#company-postal-address-2: Redwoood
+#company-postal-address-3: California
+#company-postal-address-4: USA
+#company-postal-address-5: CA 94107
+#company-skype-text: SkypeCall
+
+# Site Pages
+home: "/index.html"
+contact-us: "/contact-us.html"
+about-us: "/about-us.html"
+search: "/search.html"
+
+# Logo Settings
+standard-logo-source: "/assets/images/wsa-logo.png"
+#standard-logo-source: "assets/images/wsa-logo-orig-small.jpg"
+standard-logo-data-dark: "/assets/images/logo-dark.png"
+standard-logo-alt-text: "Wireless Security Alarms Logo"
+standard-logo-href: "/index.html"
+retina-logo-source: "/assets/images/wsa-logo@2x.png"
+retina-logo-data-dark: "/assets/images/logo-dark@2x.png"
+footer-widget-logo: "/assets/images/footer-widget-logo.png"
+
+# Footer Settings
+blogroll-title: "Related Sites"
+recent-posts-title: "Recent Posts"
+contact-details-title: "Contact Details"
+client-testimonials-title: "Customer Testimonals"
+contact-us-title: "Send us a Message"
+
+footer-company-tagline-1: "We believe in <strong>Simple</strong>, <strong>Creative</strong> & <strong>Flexible</strong> Design Standards."
+footer-subscribe-tagline-1: "<strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:"
+
+# Copyright Settings
+copyrights-copyright-message: "Copyrights &copy; 2016 All Rights Reserved by Wireless Security Alarms Limited."
+copyrights-copyright-terms-title: "Terms of Use"
+copyrights-copyright-terms-href: "#"
+copyrights-copyright-privacy-title: "Privacy Policy"
+copyrights-copyright-privacy-href: "#"

@@ -1,0 +1,5 @@
+/config.codekit
+.DS_Store
+/_site
+/_site/.htaccess
+.jekyll-metadata

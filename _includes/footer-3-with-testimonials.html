@@ -1,0 +1,132 @@
+<!--include:footer-3-with-testimonials:start-->
+<footer id="footer" class="dark">
+	<div class="container">
+		<div class="footer-widgets-wrap clearfix">
+			<div class="col_one_third">
+				<div class="widget clearfix">
+					<h4>{{ site.contact-details-title }}</h4>
+					<div>
+						{% if site.company-postal-address-1 %}
+						<address>
+							<strong>Headquarters:</strong><br>
+							{{site.company-postal-address-1}}<br>						
+							{% if site.company-postal-address-2 %}
+								{{site.company-postal-address-2}}<br>
+							{% endif %}
+							{% if site.company-postal-address-3 %}
+								{{site.company-postal-address-3}}<br>
+							{% endif %}
+							{% if site.company-postal-address-4 %}
+								{{site.company-postal-address-4}}<br>
+							{% endif %}
+							{% if site.company-postal-address-5 %}
+								{{site.company-postal-address-5}}<br>
+							{% endif %}
+						</address>
+						{% endif %}
+					{% if site.company-telephone-number %}
+						<abbr title="Phone Number"><strong>Phone: </strong></abbr>{{site.company-telephone-number}}<br>
+					{% endif %}	
+					{% if site.company-fax-number %}
+						<abbr title="Fax Number"><strong>Fax: </strong></abbr>{{site.company-fax-number}}<br>
+					{% endif %}	
+					{% if site.company-mobile-number %}
+						<abbr title="Mobile Number"><strong>Mobile: </strong></abbr>{{site.company-mobile-number}}<br>
+					{% endif %}
+					{% if site.company-email-address %}
+						<abbr title="Email Address"><strong>Email: </strong></abbr>{{site.company-email-address}}<br>
+					{% endif %}
+				</div>
+	</div>
+</div>
+<div class="col_one_third">
+	<div class="widget clearfix">
+		<h4>{{ site.client-testimonials-title }}</h4>
+		<div class="fslider testimonial no-image nobg noborder noshadow nopadding" data-animation="slide" data-arrows="false">
+			<div class="flexslider">
+				<div class="slider-wrap">
+					{% for testimonial in site.data.testimonial %}
+					<div class="slide">
+						<div class="testi-image">
+							<a href="{{ testimonial.href }}"><img src="{{ testimonial.image }}" alt="{{ testimonial.alt }}"></a>
+						</div>
+						<div class="testi-content">
+							<p>{{ testimonial.quote }}</p>
+							<div class="testi-meta">
+								{{ testimonial.from }}
+								<span>{{ testimonial.of }}</span>
+							</div>
+						</div>
+					</div>
+				    {% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="widget clearfix">
+		{% for social in site.data.social %}
+			<a href="{{ social.href }}" class="social-icon si-small si-borderless si-{{ social.type }}">
+				<i class="icon-{{ social.type }}"></i>
+				<i class="icon-{{ social.type }}"></i>
+			</a>
+  		{% endfor %}
+	</div>
+</div>
+<div class="col_one_third col_last">
+	<div class="widget quick-contact-widget clearfix">
+		<h4>{{ site.contact-us-title }}</h4>
+		<div id="quick-contact-form-result" data-notify-type="success" data-notify-msg="<i class=icon-ok-sign></i> Message Sent Successfully!"></div>
+		<form id="quick-contact-form" name="quick-contact-form" action="assets/include/quickcontact.php" method="post" class="quick-contact-form nobottommargin">
+			<div class="form-process"></div>
+			<div class="input-group divcenter">
+				<span class="input-group-addon"><i class="icon-user"></i></span>
+				<input type="text" class="required form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="Full Name" />
+			</div>
+			<div class="input-group divcenter">
+				<span class="input-group-addon"><i class="icon-email2"></i></span>
+				<input type="text" class="required form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Email Address" />
+			</div>
+			<textarea class="required form-control input-block-level short-textarea" id="quick-contact-form-message" name="quick-contact-form-message" rows="4" cols="30" placeholder="Message"></textarea>
+			<input type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
+			<button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="btn btn-danger nomargin" value="submit">Send Email</button>
+		</form>
+		<script type="text/javascript">
+			$("#quick-contact-form").validate({
+				submitHandler: function(form) {
+					$(form).animate({ opacity: 0.4 });
+					$(form).find('.form-process').fadeIn();
+					$(form).ajaxSubmit({
+						target: '#quick-contact-form-result',
+						success: function() {
+							$(form).animate({ opacity: 1 });
+							$(form).find('.form-process').fadeOut();
+							$(form).find('.form-control').val('');
+							$('#quick-contact-form-result').attr('data-notify-msg', $('#quick-contact-form-result').html()).html('');
+							SEMICOLON.widget.notifications($('#quick-contact-form-result'));
+						}
+					});
+				}
+			});
+		</script>
+	</div>
+</div>
+</div>
+</div>
+<div id="copyrights">
+	<div class="container clearfix">
+		<div class="col_half">
+			{{ site.copyrights-copyright-message }}
+		</div>
+		<div class="col_half col_last tright">
+			<div class="fright clearfix">
+				<div class="copyrights-menu copyright-links nobottommargin">
+				{% for navigation in site.data.navigation %}
+					<a href="{{ navigation.href }}">{{ navigation.title }}</a>{% unless forloop.last %}/{% endunless %}
+				{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+<!--include:footer-3-with-testimonials:end-->

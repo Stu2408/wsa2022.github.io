@@ -1,0 +1,41 @@
+<!--include:header:start-->
+<header id="header" class="full-header">
+	<div id="header-wrap">
+		<div class="container clearfix">
+			<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+			<div id="logo">
+				<a href="{{ site.standard-logo-href }}" class="standard-logo" data-dark-logo="{{ site.standard-logo-data-dark }}"><img style="padding: 10px" src="{{ site.standard-logo-source }}" alt="{{ site.standard-logo-alt-text }}"></a>
+				<a href="{{ site.standard-logo-href }}" class="retina-logo" data-dark-logo="{{ site.retina-logo-data-dark }}"><img style="padding: 10px" src="{{ site.retina-logo-source }}" alt="{{ site.standard-logo-alt-text }} "></a>
+			</div>
+			<nav id="primary-menu">
+				<ul>
+					{% for navigation in site.data.navigation %}
+						{% if navigation.subcategories != null %}
+							<li class="current">
+								<a href="{{ navigation.href }}"><div>{{ navigation.title }}</div></a>
+								<ul>
+									{% for subcategory in navigation.subcategories %}
+										<li>
+											<a href="{{ subcategory.subhref }}"><div>{{ subcategory.subtitle }}</div></a>
+										</li>
+									{% endfor %}
+								</ul>
+							</li>
+						{% else %}
+							<li class="current">
+								<a href="{{ navigation.href }}"><div>{{ navigation.title }}</div></a>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+				<div id="top-search">
+					<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+					<form action="/search.html" method="get">
+						<input name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." type="text">
+					</form>
+				</div>
+			</nav>
+		</div>
+	</div>
+</header>
+<!--include:header:end-->

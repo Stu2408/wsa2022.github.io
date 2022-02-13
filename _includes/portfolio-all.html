@@ -1,0 +1,26 @@
+<!--include:portfolio-all:start-->
+<div id="portfolio" class="portfolio-1 clearfix">
+	{% assign pages = site.pages | sort:"weight"  %}
+	{% for p in pages %}
+  		{% if p.type == "system" %}
+        <article class="portfolio-item pf-media pf-icons {% cycle '', 'alt' %} clearfix">
+			<div class="portfolio-image">
+				<a href="{{ p.url }}">
+					<img src="{{ p.system-image }}" alt="{{ p.dispplay-title }}">
+				</a>
+				<div class="portfolio-overlay">
+					<a href="{{ p.system-image }}" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+					<a href="{{ p.url }}" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+				</div>
+			</div>
+			<div class="portfolio-desc">
+				<h3><a href="{{ p.system-image }}">{{ p.display-title }}</a></h3>
+				<span><a href="#">Domestic</a></span>
+				<p>{{ p.system-info-summary }}</p>
+				<a href="{{ p.url }}" class="button button-3d noleftmargin">{{ page.show-button-text }}</a>
+			</div>
+		</article>
+   		{% endif %}
+	{% endfor %}
+</div>
+<!--include:portfolio-all:end-->

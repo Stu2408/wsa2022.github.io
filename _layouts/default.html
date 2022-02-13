@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  {% include head.html %}
+  <!--layout:default:body:start-->
+  <body class="stretched no-transition">
+    {% include body-gtm-include.html %}
+    <div id="wrapper" class="clearfix">
+      {% include header.html %}
+      {{content}}
+      {% case page.footer %}
+        {% when 1 %}
+          {% include footer-1.html %} 
+        {% when 2 %}
+          {% include footer-2.html %} 
+        {% when 3 %}
+          {% include footer-3.html %}          
+        {% else %}
+          {% include footer-3.html %} 
+      {% endcase %}   
+    </div>
+    <div id="gotoTop" class="icon-angle-up"></div>
+    <script type="text/javascript" src="/assets/js/functions-min.js"></script>
+  </body>
+  <!--layout:default:body:end-->
+</html>

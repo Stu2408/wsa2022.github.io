@@ -1,0 +1,31 @@
+#- type: "facebook"
+#  title: "Facebook"
+#  href: "/facebook"
+
+- type: "twitter"
+  title: "twitter"
+  href: "https://twitter.com/Wirelessalarms1"
+
+#- type: "gplus"
+#  title: "Google+"
+#  href: "/googleplus"
+
+#- type: "pinterest"
+#  title: "Pinterest"
+#  href: "/pinterest"
+
+#- type: "vimeo"
+#  title: "Vimeo"
+#  href: "/vimeo"
+
+#- type: "github"
+#  title: "GitHub"
+#  href: "/github"
+
+#- type: "yahoo"
+#  title: "Yahoo"
+#  href: "/yahoo"
+
+#- type: "linkedin"
+#  title: "LinkedIn"
+#  href: "/linkedin"

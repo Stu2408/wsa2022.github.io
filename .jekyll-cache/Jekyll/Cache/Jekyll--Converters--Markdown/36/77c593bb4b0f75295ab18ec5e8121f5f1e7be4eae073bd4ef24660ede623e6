@@ -1,0 +1,55 @@
+I"™<!--include:gsa-js-css:start-->
+<script>
+    (function() {
+    	var cx = '015818059723840865412:hs3xw7igzdk';
+    	var gcse = document.createElement('script');
+    	gcse.type = 'text/javascript';
+    	gcse.async = true;
+    	gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+    		'//www.google.com/cse/cse.js?cx=' + cx;
+    	var s = document.getElementsByTagName('script')[0];
+    	s.parentNode.insertBefore(gcse, s);
+    })();
+</script>
+
+<gcse:searchresults-only></gcse:searchresults-only>
+<style type="text/css">     
+    .gs-result .gs-title, .gs-result .gs-title *, .gsc-result-info, .gsc-orderby-label, .gsc-selected-option, .gsc-option, .gsc-cursor-page, .gsc-cursor-current-page {
+    	color: #000B67;
+    	text-decoration: none;
+    	font-family: 'Lato', sans-serif;
+	}
+
+	 .gsc-thumbnail, .gsc-url-top, .gsc-url-bottom {
+        display: none;
+    }
+
+    a.gs-title {
+    	font-size: 30px;
+    }
+
+    .gcsc-branding {
+        display: none; 
+    }
+
+    .gsc-result-info, .gsc-orderby-label, .gsc-selected-option, .gsc-option, .gsc-cursor-page, .gsc-cursor-current-page {
+    	font-family: 'Lato', sans-serif;
+    	color: #000B67;
+    }
+
+    .gs-title, .gs-snippet {
+        font-family: 'Lato', sans-serif;
+        color: #000B67;
+    }
+      
+   .gsc-url-top, .gsc-url-bottom {
+        display: none;
+    }
+
+    #adBlock {
+        display: none;   
+    }   
+</style>
+
+<!--include:gsa-js-css:end-->
+:ET
