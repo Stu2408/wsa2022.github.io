@@ -5,17 +5,18 @@
   caption: "<strong>Pyronix V11 Enforcer System</strong></br>Starter kit -WiFi & App Enabled</br>Award winning Enforcer</br>two-way wireless technology"
   class: "flex-caption slider-caption-bg slider-caption-bg-light slider-caption-top-right"
 
-#- href: "/systems/visonic-power-max-system.html"
-#  image: "/assets/images/slider/products/1140x500-base-visonic-power-max.jpg"
-#  thumb: "#"
-#  alt: "Visonic Powermax System"
-#  caption: "<strong>Visonic Powermax System</strong></br>We service Visonic Powermax<br> and other professionally<br> installed systems</br>"  
-#  class: "flex-caption slider-caption-bg slider-caption-bg-light slider-caption-top-right"
-
 - href: "/systems/ip-camera-and-cctv-systems.html"
   image: "/assets/images/slider/products/1140x500-base-hikvision-cameras.png"
   thumb: "#"
   alt: "Pyronix IP Camera Systems"
   caption: "<strong>Pyronix IP Camera Systems</strong></br>Bringing home monitoring to</br>the palm of your hand</br>Real time Streaming</br>Compatible exclusively with</br>the HomeControl+ App and System</br>1080p - 4K HD quality video"
+  class: "flex-caption slider-caption-bg slider-caption-bg-light slider-caption-top-right"
+
+
+- href: "/systems/visonic-power-max-system.html"
+  image: "/assets/images/slider/products/1140x500-base-other-kits.png"
+  thumb: "#"
+  alt: "Other Systems"
+  caption: "<strong>Other Systems</strong></br>We install AICO Wireless INTERLinked<br> devices and service a variety <br>of professionally installed systems <br>including the Visonic Powermax"
   class: "flex-caption slider-caption-bg slider-caption-bg-light slider-caption-top-right"
 

@@ -9,10 +9,10 @@
   subcategories:
     - subtitle: "Pyronix Enforcer System"
       subhref: "/systems/pyronix-enforcer-system.html"
-#    - subtitle: "Visonic Powermax System"
-#      subhref: "/systems/visonic-power-max-system.html"
     - subtitle: "IP Camera and CCTV Systems"
       subhref: "/systems/ip-camera-and-cctv-systems.html"
+    - subtitle: "Other Systems"
+      subhref: "/systems/visonic-power-max-system.html"
 
 - title: "Contact Us"
   href: "/contact-us.html"      
