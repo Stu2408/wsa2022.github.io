@@ -12,9 +12,10 @@
 title: "Wireless Security Alarms Limited"
 email: enquiries@wirelesssecurityalarms.co.uk
 description: "The home security experts"
-baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://wirelesssecurityalarms.co.uk" # the base hostname & protocol for your site
 url: "https://stu2408.github.io/wsa2022.github.io/"
+baseurl: "" # the subpath of your site, e.g. /blog
+repository: "Stu2408/wsa2022.github.io"
 twitter_username: wsa
 github_username:  wsa
 
