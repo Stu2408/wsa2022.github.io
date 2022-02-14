@@ -15,7 +15,7 @@ description: "The home security experts"
 #url: "http://wirelesssecurityalarms.co.uk" # the base hostname & protocol for your site
 url: "https://stu2408.github.io/wsa2022.github.io"
 baseurl: "/wsa2022.github.io" # the subpath of your site, e.g. /blog
-repository: "https://github.com/Stu2408/wsa2022.github.io"
+repository: "Stu2408/wsa2022.github.io"
 twitter_username: wsa
 github_username:  wsa
 
